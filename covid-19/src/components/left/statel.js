@@ -12,7 +12,7 @@ const Statel=()=>{
 
 ]
     return (
-       <div >
+       <div className="Statel_outer">
            <p className="col-blu bold">State/UT</p>
            <div className="left_state">
            {

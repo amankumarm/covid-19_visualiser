@@ -15,7 +15,7 @@ function SearchBox() {
                 <input type="text" onFocus={()=>setFocus(true)} onBlur={()=>setFocus(false)} />
             </div>
             <p>{Date}</p>
-            <Statel/>
+            <Statel/> 
         </div>
         )       
     }
