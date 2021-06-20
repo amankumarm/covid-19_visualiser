@@ -9,6 +9,7 @@ const CountryStat=()=>{
 
     useEffect(() => {
         var a=localStorage.getItem("data")
+        console.log(a)
         if(a==null){
             axios.get(flaskgetall)
             .then(res=>{
@@ -16,15 +17,17 @@ const CountryStat=()=>{
                 setdata(res.data)
             })
             .catch(err=>console.log(err))
-            console.log("data",data)
+        }else{
+            setdata(JSON.parse(a))
+            console.log(data)
+        
         }
-        else{
-            const
-        }
+
     }, [data]);
     return(
-        <>
-    </>
-    )
+            <div className="c_status">
+
+            </div>
+        )
 }
 export default CountryStat
