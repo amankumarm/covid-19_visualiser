@@ -3,6 +3,7 @@
     --col-red:#E2302818;
     --col-blu:rgb(0, 123, 255,0.18);
     --col-grn:#27A64418;
+    --backg-grey:#212130;
 }
 *{
     font-family: 'Archia Regular';
@@ -11,7 +12,7 @@
 }
 
 .col-grey{
-    color: #545A64 !important;
+    color: #5a616d !important;
 }
 .col-blu{
     color: rgb(0, 123, 255) !important;
@@ -94,7 +95,6 @@
 }
 /* all india cards */
 .c_status{
-    /* border: 1px solid white; */
     flex-basis:22%;
     display: flex;
     flex-direction: row;
@@ -136,5 +136,23 @@
 .cgr:hover{
     background-color: var(--col-gre);
     transition: 0.5s ease;
-
 }
+
+/* Table */
+.Table-container{
+    padding-top: 3em;
+    display: flex;
+    flex-direction: row;
+}
+.head,.item{
+margin: 5px 3px ;
+background-color:var(--col-gre);
+padding:1em;
+}
+.col{
+    flex-grow: 1    ;
+    font-weight:bolder ;
+    white-space: nowrap;
+}
+
+
