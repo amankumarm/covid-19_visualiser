@@ -100,7 +100,7 @@
     flex-direction: row;
 }
 .all_i_card{
-    flex-grow:1;
+    flex-grow:0.8;
     font-family: 'Archia-Regular' !important;
     font-weight: bold;
     display: flex;
@@ -148,11 +148,15 @@
 margin: 5px 3px ;
 background-color:var(--col-gre);
 padding:1em;
+/* white-space: nowrap; */
+/* text-overflow: ellipsis; */
 }
 .col{
-    flex-grow: 1    ;
+    flex-grow: 1 ;
     font-weight:bolder ;
-    white-space: nowrap;
 }
+.nw{
+white-space: nowrap;
 
+}
 

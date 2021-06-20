@@ -10,8 +10,6 @@ def get_all_states_daily_data():
     csv_file = open('downloaded.csv', 'wb')
     csv_file.write(url_content)
     csv_file.close()
-
-
     needed=[]
     with open('downloaded.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
@@ -53,7 +51,34 @@ def get_total_data():
             needed.append(i)  
     needed=needed[len(needed)-1]
     with open('total.json', 'w') as fp:
-        json.dump(needed, fp,  indent=4)
-get_all_states_daily_data()
-get_total_data()
-print("--- %s seconds ---" % (time.time() - start_time))
+        json.dump(needed, fp,  indent=4)    #remove this in prod
+    return needed
+# get_all_states_daily_data()
+# get_total_data()
+
+def get_total_data_of_states():
+    state=[]
+    confirmed=[]
+    active=[]
+    deceased=[]
+    recovered=[]
+    lm=[]
+    req = requests.get("https://api.covid19india.org/csv/latest/state_wise.csv")
+    url_content = req.content
+    csv_file = open('updated_state.csv', 'wb')
+    csv_file.write(url_content)
+    csv_file.close()
+    with open('updated_state.csv', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for i in reader:
+            state.append(i['State'])
+            confirmed.append(i['Confirmed'])
+            active.append(i['Active'])
+            deceased.append(i['Deaths'])
+            recovered.append(i['Recovered'])
+            lm.append(i['Last_Updated_Time'])
+    final={'ac':active,'dec':deceased,'co':confirmed,'re':recovered,'s':state,'lastm':lm}
+    return final
+# get_total_data_of_states()
+
+    
