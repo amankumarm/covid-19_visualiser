@@ -6,7 +6,7 @@ var a=new Date().toLocaleString()
 function SearchBox() { 
     const [Focus,setFocus] = useState(false)
     const [Date,setDate]= useState(a)
-    if (true) {
+    if (Focus) {
         return(
         <div className="sb_outer">
             <p>Search Your State</p>

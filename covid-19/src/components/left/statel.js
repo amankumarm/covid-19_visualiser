@@ -16,8 +16,8 @@ const Statel=()=>{
            <p className="col-blu bold">State/UT</p>
            <div className="left_state">
            {
-               states.map(item=>(
-                   <div className="ofstate"> -{item}</div>
+               states.map((item,index)=>(
+                   <div className="ofstate" key={index}> -{item}</div>
                ))
            }
            </div>

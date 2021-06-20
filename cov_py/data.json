@@ -1,10 +1,5 @@
 {
     "TT": {
-        "2021-05-20": {
-            "Confirmed": "259242",
-            "Recovered": "357173",
-            "Deceased": "4209"
-        },
         "2021-05-21": {
             "Confirmed": "257299",
             "Recovered": "357625",
@@ -146,17 +141,17 @@
             "Deceased": "1591"
         },
         "2021-06-18": {
-            "Confirmed": "60739",
-            "Recovered": "97779",
+            "Confirmed": "60765",
+            "Recovered": "97854",
             "Deceased": "1645"
+        },
+        "2021-06-19": {
+            "Confirmed": "58615",
+            "Recovered": "87606",
+            "Deceased": "1574"
         }
     },
     "AN": {
-        "2021-05-20": {
-            "Confirmed": "49",
-            "Recovered": "16",
-            "Deceased": "1"
-        },
         "2021-05-21": {
             "Confirmed": "31",
             "Recovered": "16",
@@ -301,14 +296,14 @@
             "Confirmed": "28",
             "Recovered": "24",
             "Deceased": "0"
+        },
+        "2021-06-19": {
+            "Confirmed": "31",
+            "Recovered": "34",
+            "Deceased": "0"
         }
     },
     "AP": {
-        "2021-05-20": {
-            "Confirmed": "22610",
-            "Recovered": "23098",
-            "Deceased": "114"
-        },
         "2021-05-21": {
             "Confirmed": "20937",
             "Recovered": "20811",
@@ -453,14 +448,14 @@
             "Confirmed": "6341",
             "Recovered": "8486",
             "Deceased": "57"
+        },
+        "2021-06-19": {
+            "Confirmed": "5674",
+            "Recovered": "8014",
+            "Deceased": "45"
         }
     },
     "AR": {
-        "2021-05-20": {
-            "Confirmed": "360",
-            "Recovered": "214",
-            "Deceased": "0"
-        },
         "2021-05-21": {
             "Confirmed": "394",
             "Recovered": "206",
@@ -605,14 +600,14 @@
             "Confirmed": "209",
             "Recovered": "322",
             "Deceased": "1"
+        },
+        "2021-06-19": {
+            "Confirmed": "231",
+            "Recovered": "229",
+            "Deceased": "0"
         }
     },
     "AS": {
-        "2021-05-20": {
-            "Confirmed": "6573",
-            "Recovered": "3071",
-            "Deceased": "74"
-        },
         "2021-05-21": {
             "Confirmed": "6066",
             "Recovered": "4987",
@@ -757,14 +752,14 @@
             "Confirmed": "3706",
             "Recovered": "4835",
             "Deceased": "33"
+        },
+        "2021-06-19": {
+            "Confirmed": "3571",
+            "Recovered": "5141",
+            "Deceased": "40"
         }
     },
     "BR": {
-        "2021-05-20": {
-            "Confirmed": "5871",
-            "Recovered": "9977",
-            "Deceased": "98"
-        },
         "2021-05-21": {
             "Confirmed": "5154",
             "Recovered": "10151",
@@ -909,14 +904,14 @@
             "Confirmed": "347",
             "Recovered": "594",
             "Deceased": "9"
+        },
+        "2021-06-19": {
+            "Confirmed": "349",
+            "Recovered": "494",
+            "Deceased": "7"
         }
     },
     "CH": {
-        "2021-05-20": {
-            "Confirmed": "404",
-            "Recovered": "891",
-            "Deceased": "10"
-        },
         "2021-05-21": {
             "Confirmed": "406",
             "Recovered": "790",
@@ -1061,14 +1056,14 @@
             "Confirmed": "48",
             "Recovered": "47",
             "Deceased": "2"
+        },
+        "2021-06-19": {
+            "Confirmed": "45",
+            "Recovered": "78",
+            "Deceased": "2"
         }
     },
     "CT": {
-        "2021-05-20": {
-            "Confirmed": "5212",
-            "Recovered": "9501",
-            "Deceased": "113"
-        },
         "2021-05-21": {
             "Confirmed": "4943",
             "Recovered": "9867",
@@ -1213,14 +1208,14 @@
             "Confirmed": "509",
             "Recovered": "1122",
             "Deceased": "7"
+        },
+        "2021-06-19": {
+            "Confirmed": "479",
+            "Recovered": "1001",
+            "Deceased": "9"
         }
     },
     "DN": {
-        "2021-05-20": {
-            "Confirmed": "40",
-            "Recovered": "55",
-            "Deceased": "0"
-        },
         "2021-05-21": {
             "Confirmed": "27",
             "Recovered": "95",
@@ -1365,14 +1360,14 @@
             "Confirmed": "7",
             "Recovered": "9",
             "Deceased": "0"
+        },
+        "2021-06-19": {
+            "Confirmed": "10",
+            "Recovered": "7",
+            "Deceased": "0"
         }
     },
     "DD": {
-        "2021-05-20": {
-            "Confirmed": "0",
-            "Recovered": "0",
-            "Deceased": "0"
-        },
         "2021-05-21": {
             "Confirmed": "0",
             "Recovered": "0",
@@ -1517,14 +1512,14 @@
             "Confirmed": "0",
             "Recovered": "0",
             "Deceased": "0"
+        },
+        "2021-06-19": {
+            "Confirmed": "0",
+            "Recovered": "0",
+            "Deceased": "0"
         }
     },
     "DL": {
-        "2021-05-20": {
-            "Confirmed": "3231",
-            "Recovered": "7831",
-            "Deceased": "233"
-        },
         "2021-05-21": {
             "Confirmed": "3009",
             "Recovered": "7288",
@@ -1669,14 +1664,14 @@
             "Confirmed": "165",
             "Recovered": "260",
             "Deceased": "14"
+        },
+        "2021-06-19": {
+            "Confirmed": "135",
+            "Recovered": "201",
+            "Deceased": "7"
         }
     },
     "GA": {
-        "2021-05-20": {
-            "Confirmed": "1582",
-            "Recovered": "3694",
-            "Deceased": "44"
-        },
         "2021-05-21": {
             "Confirmed": "1625",
             "Recovered": "3075",
@@ -1821,14 +1816,14 @@
             "Confirmed": "315",
             "Recovered": "534",
             "Deceased": "6"
+        },
+        "2021-06-19": {
+            "Confirmed": "302",
+            "Recovered": "419",
+            "Deceased": "9"
         }
     },
     "GJ": {
-        "2021-05-20": {
-            "Confirmed": "4773",
-            "Recovered": "8308",
-            "Deceased": "64"
-        },
         "2021-05-21": {
             "Confirmed": "4251",
             "Recovered": "8783",
@@ -1973,14 +1968,14 @@
             "Confirmed": "262",
             "Recovered": "776",
             "Deceased": "5"
+        },
+        "2021-06-19": {
+            "Confirmed": "228",
+            "Recovered": "874",
+            "Deceased": "5"
         }
     },
     "HR": {
-        "2021-05-20": {
-            "Confirmed": "6457",
-            "Recovered": "14734",
-            "Deceased": "129"
-        },
         "2021-05-21": {
             "Confirmed": "5643",
             "Recovered": "13486",
@@ -2125,14 +2120,14 @@
             "Confirmed": "209",
             "Recovered": "460",
             "Deceased": "36"
+        },
+        "2021-06-19": {
+            "Confirmed": "170",
+            "Recovered": "400",
+            "Deceased": "33"
         }
     },
     "HP": {
-        "2021-05-20": {
-            "Confirmed": "2648",
-            "Recovered": "4257",
-            "Deceased": "65"
-        },
         "2021-05-21": {
             "Confirmed": "2662",
             "Recovered": "4535",
@@ -2277,14 +2272,14 @@
             "Confirmed": "344",
             "Recovered": "577",
             "Deceased": "5"
+        },
+        "2021-06-19": {
+            "Confirmed": "239",
+            "Recovered": "432",
+            "Deceased": "10"
         }
     },
     "JK": {
-        "2021-05-20": {
-            "Confirmed": "4169",
-            "Recovered": "4042",
-            "Deceased": "67"
-        },
         "2021-05-21": {
             "Confirmed": "3848",
             "Recovered": "4466",
@@ -2429,14 +2424,14 @@
             "Confirmed": "671",
             "Recovered": "1171",
             "Deceased": "8"
+        },
+        "2021-06-19": {
+            "Confirmed": "521",
+            "Recovered": "1197",
+            "Deceased": "4"
         }
     },
     "JH": {
-        "2021-05-20": {
-            "Confirmed": "2056",
-            "Recovered": "4326",
-            "Deceased": "60"
-        },
         "2021-05-21": {
             "Confirmed": "2151",
             "Recovered": "4117",
@@ -2581,14 +2576,14 @@
             "Confirmed": "141",
             "Recovered": "274",
             "Deceased": "2"
+        },
+        "2021-06-19": {
+            "Confirmed": "135",
+            "Recovered": "305",
+            "Deceased": "2"
         }
     },
     "KA": {
-        "2021-05-20": {
-            "Confirmed": "28869",
-            "Recovered": "52257",
-            "Deceased": "548"
-        },
         "2021-05-21": {
             "Confirmed": "32218",
             "Recovered": "52581",
@@ -2733,14 +2728,14 @@
             "Confirmed": "5783",
             "Recovered": "15290",
             "Deceased": "168"
+        },
+        "2021-06-19": {
+            "Confirmed": "5815",
+            "Recovered": "11832",
+            "Deceased": "161"
         }
     },
     "KL": {
-        "2021-05-20": {
-            "Confirmed": "30491",
-            "Recovered": "44369",
-            "Deceased": "128"
-        },
         "2021-05-21": {
             "Confirmed": "29673",
             "Recovered": "41032",
@@ -2885,14 +2880,14 @@
             "Confirmed": "11361",
             "Recovered": "12147",
             "Deceased": "90"
+        },
+        "2021-06-19": {
+            "Confirmed": "12443",
+            "Recovered": "13145",
+            "Deceased": "115"
         }
     },
     "LA": {
-        "2021-05-20": {
-            "Confirmed": "107",
-            "Recovered": "106",
-            "Deceased": "1"
-        },
         "2021-05-21": {
             "Confirmed": "121",
             "Recovered": "110",
@@ -3034,17 +3029,17 @@
             "Deceased": "1"
         },
         "2021-06-18": {
-            "Confirmed": "0",
-            "Recovered": "0",
+            "Confirmed": "26",
+            "Recovered": "75",
             "Deceased": "0"
+        },
+        "2021-06-19": {
+            "Confirmed": "53",
+            "Recovered": "113",
+            "Deceased": "1"
         }
     },
     "LD": {
-        "2021-05-20": {
-            "Confirmed": "290",
-            "Recovered": "97",
-            "Deceased": "2"
-        },
         "2021-05-21": {
             "Confirmed": "345",
             "Recovered": "177",
@@ -3189,14 +3184,14 @@
             "Confirmed": "15",
             "Recovered": "66",
             "Deceased": "0"
+        },
+        "2021-06-19": {
+            "Confirmed": "38",
+            "Recovered": "39",
+            "Deceased": "1"
         }
     },
     "MP": {
-        "2021-05-20": {
-            "Confirmed": "4952",
-            "Recovered": "9746",
-            "Deceased": "88"
-        },
         "2021-05-21": {
             "Confirmed": "4384",
             "Recovered": "9405",
@@ -3341,14 +3336,14 @@
             "Confirmed": "110",
             "Recovered": "339",
             "Deceased": "28"
+        },
+        "2021-06-19": {
+            "Confirmed": "110",
+            "Recovered": "365",
+            "Deceased": "30"
         }
     },
     "MH": {
-        "2021-05-20": {
-            "Confirmed": "29911",
-            "Recovered": "47371",
-            "Deceased": "984"
-        },
         "2021-05-21": {
             "Confirmed": "29644",
             "Recovered": "44493",
@@ -3493,14 +3488,14 @@
             "Confirmed": "9798",
             "Recovered": "14347",
             "Deceased": "648"
+        },
+        "2021-06-19": {
+            "Confirmed": "8912",
+            "Recovered": "10373",
+            "Deceased": "682"
         }
     },
     "MN": {
-        "2021-05-20": {
-            "Confirmed": "644",
-            "Recovered": "546",
-            "Deceased": "11"
-        },
         "2021-05-21": {
             "Confirmed": "656",
             "Recovered": "1247",
@@ -3645,14 +3640,14 @@
             "Confirmed": "603",
             "Recovered": "447",
             "Deceased": "12"
+        },
+        "2021-06-19": {
+            "Confirmed": "592",
+            "Recovered": "294",
+            "Deceased": "6"
         }
     },
     "ML": {
-        "2021-05-20": {
-            "Confirmed": "1183",
-            "Recovered": "465",
-            "Deceased": "10"
-        },
         "2021-05-21": {
             "Confirmed": "828",
             "Recovered": "419",
@@ -3797,14 +3792,14 @@
             "Confirmed": "650",
             "Recovered": "431",
             "Deceased": "9"
+        },
+        "2021-06-19": {
+            "Confirmed": "514",
+            "Recovered": "585",
+            "Deceased": "5"
         }
     },
     "MZ": {
-        "2021-05-20": {
-            "Confirmed": "192",
-            "Recovered": "136",
-            "Deceased": "0"
-        },
         "2021-05-21": {
             "Confirmed": "288",
             "Recovered": "114",
@@ -3949,14 +3944,14 @@
             "Confirmed": "302",
             "Recovered": "228",
             "Deceased": "1"
+        },
+        "2021-06-19": {
+            "Confirmed": "313",
+            "Recovered": "271",
+            "Deceased": "2"
         }
     },
     "NL": {
-        "2021-05-20": {
-            "Confirmed": "326",
-            "Recovered": "218",
-            "Deceased": "11"
-        },
         "2021-05-21": {
             "Confirmed": "309",
             "Recovered": "225",
@@ -4101,14 +4096,14 @@
             "Confirmed": "56",
             "Recovered": "362",
             "Deceased": "1"
+        },
+        "2021-06-19": {
+            "Confirmed": "94",
+            "Recovered": "171",
+            "Deceased": "1"
         }
     },
     "OR": {
-        "2021-05-20": {
-            "Confirmed": "11498",
-            "Recovered": "9870",
-            "Deceased": "25"
-        },
         "2021-05-21": {
             "Confirmed": "12523",
             "Recovered": "10881",
@@ -4253,14 +4248,14 @@
             "Confirmed": "3806",
             "Recovered": "6252",
             "Deceased": "37"
+        },
+        "2021-06-19": {
+            "Confirmed": "3427",
+            "Recovered": "5281",
+            "Deceased": "42"
         }
     },
     "PY": {
-        "2021-05-20": {
-            "Confirmed": "1957",
-            "Recovered": "1304",
-            "Deceased": "28"
-        },
         "2021-05-21": {
             "Confirmed": "1702",
             "Recovered": "2017",
@@ -4405,14 +4400,14 @@
             "Confirmed": "353",
             "Recovered": "557",
             "Deceased": "4"
+        },
+        "2021-06-19": {
+            "Confirmed": "295",
+            "Recovered": "621",
+            "Deceased": "6"
         }
     },
     "PB": {
-        "2021-05-20": {
-            "Confirmed": "5469",
-            "Recovered": "8736",
-            "Deceased": "191"
-        },
         "2021-05-21": {
             "Confirmed": "5253",
             "Recovered": "8652",
@@ -4557,14 +4552,14 @@
             "Confirmed": "612",
             "Recovered": "1229",
             "Deceased": "33"
+        },
+        "2021-06-19": {
+            "Confirmed": "594",
+            "Recovered": "1315",
+            "Deceased": "31"
         }
     },
     "RJ": {
-        "2021-05-20": {
-            "Confirmed": "7680",
-            "Recovered": "16705",
-            "Deceased": "127"
-        },
         "2021-05-21": {
             "Confirmed": "6225",
             "Recovered": "18264",
@@ -4709,14 +4704,14 @@
             "Confirmed": "150",
             "Recovered": "620",
             "Deceased": "9"
+        },
+        "2021-06-19": {
+            "Confirmed": "193",
+            "Recovered": "518",
+            "Deceased": "7"
         }
     },
     "SK": {
-        "2021-05-20": {
-            "Confirmed": "249",
-            "Recovered": "216",
-            "Deceased": "3"
-        },
         "2021-05-21": {
             "Confirmed": "317",
             "Recovered": "261",
@@ -4861,14 +4856,14 @@
             "Confirmed": "162",
             "Recovered": "166",
             "Deceased": "3"
+        },
+        "2021-06-19": {
+            "Confirmed": "151",
+            "Recovered": "299",
+            "Deceased": "1"
         }
     },
     "TN": {
-        "2021-05-20": {
-            "Confirmed": "35579",
-            "Recovered": "25368",
-            "Deceased": "397"
-        },
         "2021-05-21": {
             "Confirmed": "36184",
             "Recovered": "24478",
@@ -5013,14 +5008,14 @@
             "Confirmed": "8633",
             "Recovered": "19860",
             "Deceased": "287"
+        },
+        "2021-06-19": {
+            "Confirmed": "8183",
+            "Recovered": "18232",
+            "Deceased": "180"
         }
     },
     "TG": {
-        "2021-05-20": {
-            "Confirmed": "3660",
-            "Recovered": "4826",
-            "Deceased": "23"
-        },
         "2021-05-21": {
             "Confirmed": "3464",
             "Recovered": "4801",
@@ -5165,14 +5160,14 @@
             "Confirmed": "1417",
             "Recovered": "1897",
             "Deceased": "12"
+        },
+        "2021-06-19": {
+            "Confirmed": "1362",
+            "Recovered": "1813",
+            "Deceased": "10"
         }
     },
     "TR": {
-        "2021-05-20": {
-            "Confirmed": "720",
-            "Recovered": "316",
-            "Deceased": "3"
-        },
         "2021-05-21": {
             "Confirmed": "863",
             "Recovered": "379",
@@ -5317,14 +5312,14 @@
             "Confirmed": "467",
             "Recovered": "713",
             "Deceased": "3"
+        },
+        "2021-06-19": {
+            "Confirmed": "443",
+            "Recovered": "595",
+            "Deceased": "5"
         }
     },
     "UP": {
-        "2021-05-20": {
-            "Confirmed": "6681",
-            "Recovered": "13590",
-            "Deceased": "236"
-        },
         "2021-05-21": {
             "Confirmed": "7682",
             "Recovered": "17668",
@@ -5469,14 +5464,14 @@
             "Confirmed": "149",
             "Recovered": "774",
             "Deceased": "51"
+        },
+        "2021-06-19": {
+            "Confirmed": "257",
+            "Recovered": "592",
+            "Deceased": "51"
         }
     },
     "UT": {
-        "2021-05-20": {
-            "Confirmed": "3658",
-            "Recovered": "8006",
-            "Deceased": "159"
-        },
         "2021-05-21": {
             "Confirmed": "3626",
             "Recovered": "8731",
@@ -5621,14 +5616,14 @@
             "Confirmed": "222",
             "Recovered": "451",
             "Deceased": "6"
+        },
+        "2021-06-19": {
+            "Confirmed": "220",
+            "Recovered": "217",
+            "Deceased": "9"
         }
     },
     "WB": {
-        "2021-05-20": {
-            "Confirmed": "19091",
-            "Recovered": "18910",
-            "Deceased": "162"
-        },
         "2021-05-21": {
             "Confirmed": "19847",
             "Recovered": "19017",
@@ -5773,14 +5768,14 @@
             "Confirmed": "2788",
             "Recovered": "2112",
             "Deceased": "58"
+        },
+        "2021-06-19": {
+            "Confirmed": "2486",
+            "Recovered": "2109",
+            "Deceased": "55"
         }
     },
     "UN": {
-        "2021-05-20": {
-            "Confirmed": "0",
-            "Recovered": "0",
-            "Deceased": "0"
-        },
         "2021-05-21": {
             "Confirmed": "0",
             "Recovered": "0",
@@ -5922,6 +5917,11 @@
             "Deceased": "0"
         },
         "2021-06-18": {
+            "Confirmed": "0",
+            "Recovered": "0",
+            "Deceased": "0"
+        },
+        "2021-06-19": {
             "Confirmed": "0",
             "Recovered": "0",
             "Deceased": "0"
