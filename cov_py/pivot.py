@@ -80,5 +80,25 @@ def get_total_data_of_states():
     final={'ac':active,'dec':deceased,'co':confirmed,'re':recovered,'s':state,'lastm':lm}
     return final
 # get_total_data_of_states()
+def get_total_data_of_states1():
+    req = requests.get("https://api.covid19india.org/csv/latest/state_wise.csv")
+    url_content = req.content
+    csv_file = open('updated_state.csv', 'wb')
+    csv_file.write(url_content)
+    csv_file.close()
+    final=[]
+    with open('updated_state.csv', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for i in reader:
+            i.pop("Migrated_Other")
+            i.pop("State_code")
+            i.pop("Delta_Confirmed")
+            i.pop("Delta_Recovered")
+            i.pop("Delta_Deaths")
+            i.pop("State_Notes")
+            final.append(i)
+    return final
+    # print(final)
+get_total_data_of_states1() 
 
     

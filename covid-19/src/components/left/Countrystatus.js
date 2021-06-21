@@ -27,10 +27,10 @@ const CountryStat=()=>{
     // }, [data]);
     return(
             <div className="c_status">
-                <div className="all_i_card col-red cr"><h3>Confirmed</h3><span>12,22,500</span></div>
-                <div className="all_i_card col-blu cb"><h3 >Active</h3><span>12,22,500</span></div>
-                <div className="all_i_card col-green cg"><h3>Recovered</h3><span>12,22,500</span></div>
-                <div className="all_i_card col-grey cgr"><h3>Desceased</h3><span>12,22,500</span></div>
+                <div className="all_i_card col-red cr"><p>Confirmed</p><span>12,22,500</span></div>
+                <div className="all_i_card col-blu cb"><p >Active</p><span>12,22,500</span></div>
+                <div className="all_i_card col-green cg"><p>Recovered</p><span>12,22,500</span></div>
+                <div className="all_i_card col-grey cgr"><p>Desceased</p><span>12,22,500</span></div>
 
             </div>
         )
