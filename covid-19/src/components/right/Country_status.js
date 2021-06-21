@@ -7,5 +7,6 @@ export const Country_status=()=>(
 export const Spreads=()=>(
     <div className="spreads test">
         <MyResponsiveLine data={data}/>
+        
     </div>
 )
