@@ -1,6 +1,4 @@
-import { useState,useEffect } from "react"
 import '../../assets/css/left.css'
-import { flaskgetall } from "../../constants"
 const CountryStat=({alldata})=>{
     return(
             <div className="c_status">

@@ -1,9 +1,9 @@
 .test{
-    border: 1px solid white;
+    /* border: 1px solid white; */
 
 }
 .right_outer{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height:100vh;
     display: flex;
     flex-direction: column;
@@ -11,4 +11,8 @@
 }
 .country_status{
     flex-basis: 40%;
+}
+.spreads{
+    flex-grow: 1;
+
 }

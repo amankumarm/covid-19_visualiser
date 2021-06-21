@@ -34,8 +34,7 @@ def get_all_states_daily_data():
             # states[j][date][status]={}
             states[j][date][status]=needed[k][j]
         k=k+1
-    with open('data.json', 'w') as fp:
-        json.dump(states, fp,  indent=4)
+    return states
     # for i in needed:
 # get_all_states_daily_data()
 def get_total_data():
