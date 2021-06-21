@@ -1,6 +1,14 @@
-.right_outer{
-    /* border: 1px solid white; */
-    height:100%;
-    flex-basis:45% ;
+.test{
+    border: 1px solid white;
 
+}
+.right_outer{
+    border: 1px solid white;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    flex-basis:45%;
+}
+.country_status{
+    flex-basis: 40%;
 }
