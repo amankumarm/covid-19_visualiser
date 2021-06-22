@@ -29,7 +29,7 @@
 }
 .left_outer{
     height:100%;
-    flex-basis:45% ;
+    flex-basis:40% ;
     display: flex;
     flex-direction: column;
 }
@@ -159,12 +159,14 @@ padding:1em 0em;
 text-align: center;
 vertical-align: center;
 font-weight: bolder;
+font-size: 13px;
+
 }
 .col{
     justify-content: center;
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .tog-1{

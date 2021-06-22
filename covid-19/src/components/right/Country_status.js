@@ -1,12 +1,23 @@
 import '../../assets/css/right.css'
 import {useEffect,useState} from 'react'
 import MyResponsiveLine from './a'
-import data from './data.json'
 import axios from 'axios'
 import {flaskgetcontryhistory} from '../../constants'
 export const Country_status=()=>(
-    <div className="country_status test"></div>
+    <div className="country_status col-grey">
+	<div className="ind col-red"><h2>India</h2>
+	<p>Today</p></div>
+	<div className="i2">Tested
+39,40,72,142
+As of 21 June
+per source</div>    	
+    </div>
 )
+
+
+
+
+
 export const Spreads=()=>{
     const [confd,setconfd]=useState([])
     const [act,setact]=useState([])
@@ -86,7 +97,17 @@ export const Spreads=()=>{
     }
 
     return (<div className="spreads test">
-        
+<select>  
+        <option>New Delhi</option>  
+        <option>Indore</option>  
+        <option>Jaipur</option>  
+        <option>Jodhpur</option>  
+        <option>Chandigarh</option>  
+        <option>Mumbai</option>  
+        <option>Bengaluru</option>  
+        <option>Lucknow</option>  
+        <option>Amritsar</option>  
+  </select> 
         <div className="sp_">
         <MyResponsiveLine data={confd} tv={tickc} conf={c_op}/>
         </div>

@@ -19,6 +19,11 @@ def func2():
 	f=get_total_data()
 	a=json.dumps(f,indent=4)
 	return a
+@app.route('/test')
+def func3():  #works
+	f=get_all_states_daily_data()
+	a=json.dumps(f,indent=4)
+	return a
 if __name__ == '__main__':
    app.run(debug=True)
    

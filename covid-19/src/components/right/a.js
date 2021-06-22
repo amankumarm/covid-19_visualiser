@@ -4,7 +4,7 @@ import { ResponsiveLine } from '@nivo/line'
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
-const MyResponsiveLine = ({ data ,conf ,tv  }) => (
+const MyResponsiveLine = ({ data ,conf ,tv,name  }) => (
     <ResponsiveLine
         theme={{
             "background": conf.theme_bg,
@@ -13,7 +13,7 @@ const MyResponsiveLine = ({ data ,conf ,tv  }) => (
             "axis": {
                 "domain": {
                     "line": {
-                        "stroke": "#968d8d",
+                        "stroke": "#6a6a6a",
                         "strokeWidth": 1
                     }
                 },
@@ -32,7 +32,7 @@ const MyResponsiveLine = ({ data ,conf ,tv  }) => (
             }
         }}
         data={data}
-        margin={{ top: 60, right: 60, bottom: 60, left: 50 }}
+        margin={{ top: 50, right: 50, bottom: 50, left: 50 }}
         xScale={{ type: 'point' }}
         yScale={{ type: 'linear', min: 0, max: 'auto', stacked: true, reverse: false }}
         yFormat=" >-.2f"
@@ -44,10 +44,11 @@ const MyResponsiveLine = ({ data ,conf ,tv  }) => (
             tickSize: 5,	
             tickPadding: 5,
             tickRotation: 0,
-            legend: 'count',
+            legend: "Count",
             legendOffset:20,
             legendPosition: 'middle'
         }}
+        enableCrosshair={false}
         axisBottom={{
             tickValues:tv.x,
             orient: 'bottom',
@@ -71,7 +72,31 @@ const MyResponsiveLine = ({ data ,conf ,tv  }) => (
         pointLabelYOffset={-12}
         crosshairType="top-left"
         useMesh={true}
-        legends={[]}
+        legends={[
+            {
+                anchor: 'top-left',
+                direction: 'column',
+                justify: false,
+                translateX: -30,
+                translateY: -40,
+                itemWidth: 11,
+                itemHeight: 27,
+                itemsSpacing: 4,
+                symbolSize: 19,
+                symbolShape: 'circle',
+                itemDirection: 'left-to-right',
+                itemTextColor: '#777',
+                effects: [
+                    {
+                        on: 'hover',
+                        style: {
+                            itemBackground: 'rgba(0, 0, 0, .03)',
+                            itemOpacity: 1
+                        }
+                    }
+                ]
+            }
+        ]}
     />
 )
 

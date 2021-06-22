@@ -48,7 +48,7 @@ def get_total_data():
         reader = csv.DictReader(csvfile)
         for i in reader:
             needed.append(i)  
-    needed=needed[len(needed)-60:]
+    needed=needed[len(needed)-30:]
     	
     c=[]
     r=[]
