@@ -4,11 +4,11 @@ import { ResponsiveLine } from '@nivo/line'
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
-const MyResponsiveLine = ({ data /* see data tab */ }) => (
+const MyResponsiveLine = ({ data ,conf ,tv  }) => (
     <ResponsiveLine
         theme={{
-            "background": "#331327",
-            "textColor": "#ff073a",
+            "background": conf.theme_bg,
+            "textColor": conf.theme_fc,
             "fontSize": 13,
             "axis": {
                 "domain": {
@@ -32,40 +32,40 @@ const MyResponsiveLine = ({ data /* see data tab */ }) => (
             }
         }}
         data={data}
-        margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
+        margin={{ top: 60, right: 60, bottom: 60, left: 50 }}
         xScale={{ type: 'point' }}
         yScale={{ type: 'linear', min: 0, max: 'auto', stacked: true, reverse: false }}
         yFormat=" >-.2f"
         curve="monotoneX"
         axisTop={null}
-        axisRight={null}
+        axisRight={{
+        	tickValues:[],
+            orient: 'right',
+            tickSize: 5,	
+            tickPadding: 5,
+            tickRotation: 0,
+            legend: 'count',
+            legendOffset:20,
+            legendPosition: 'middle'
+        }}
         axisBottom={{
-            tickValues:[
-                0,10,20,30,40,50
-            ],
+            tickValues:tv.x,
             orient: 'bottom',
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: 'transportation',
+            legend: 'Date',
             legendOffset: 36,
             legendPosition: 'middle'
         }}
         enableArea={true}        
         enableGridX={false}
         enableGridY={false}
-        axisLeft={{
-            orient: 'left',
-            tickSize: 5,
-            tickPadding: 5,
-            tickRotation: 0,
-            legend: 'count',
-            legendOffset: -40,
-            legendPosition: 'middle'
-        }}
-        colors={{ scheme: 'red_yellow_blue' }}
+        axisLeft={null}
+        colors={{ scheme: conf.col_sc }}
         pointColor={{ theme: 'background' }}
         pointSize={5}
+        // colors={{ datum: '#6C757D' }}
         pointBorderWidth={4}
         pointBorderColor={{ from: 'serieColor' }}
         pointLabelYOffset={-12}

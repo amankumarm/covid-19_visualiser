@@ -48,12 +48,19 @@ def get_total_data():
         reader = csv.DictReader(csvfile)
         for i in reader:
             needed.append(i)  
-    needed=needed[len(needed)-1]
-    with open('total.json', 'w') as fp:
-        json.dump(needed, fp,  indent=4)    #remove this in prod
-    return needed
-# get_all_states_daily_data()
-# get_total_data()
+    needed=needed[len(needed)-60:]
+    	
+    c=[]
+    r=[]
+    d=[]
+    a=[]
+    for i in needed:
+    	c.append({i['Date']:i['Daily Confirmed']})
+    	r.append({i['Date']:i['Daily Recovered']})
+    	d.append({i['Date']:i['Daily Deceased']})
+    	a.append({i['Date']:int(i['Total Confirmed'])-(int(i['Total Deceased'])+int(i['Total Recovered']))})
+    final={'a':a,'d':d,'c':c,'r':r}
+    return final
 
 def get_total_data_of_states():
     state=[]
@@ -98,6 +105,8 @@ def get_total_data_of_states1():
             final.append(i)
     return final
     # print(final)
-get_total_data_of_states1() 
+
+
+
 
     
