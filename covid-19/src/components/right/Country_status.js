@@ -97,17 +97,7 @@ export const Spreads=()=>{
     }
 
     return (<div className="spreads test">
-<select>  
-        <option>New Delhi</option>  
-        <option>Indore</option>  
-        <option>Jaipur</option>  
-        <option>Jodhpur</option>  
-        <option>Chandigarh</option>  
-        <option>Mumbai</option>  
-        <option>Bengaluru</option>  
-        <option>Lucknow</option>  
-        <option>Amritsar</option>  
-  </select> 
+
         <div className="sp_">
         <MyResponsiveLine data={confd} tv={tickc} conf={c_op}/>
         </div>
