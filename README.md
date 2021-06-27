@@ -2,8 +2,7 @@
 
 # Covid-19 Visualiser
 
-This project public api's provided by [covid19india.org](https://api.covid19india.org/)
-
+This public api's used are [here](https://api.covid19india.org/)
 
 
 
