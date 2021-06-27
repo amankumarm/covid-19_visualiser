@@ -59,7 +59,7 @@ def get_total_data():
     	r.append({i['Date']:i['Daily Recovered']})
     	d.append({i['Date']:i['Daily Deceased']})
     	a.append({i['Date']:int(i['Total Confirmed'])-(int(i['Total Deceased'])+int(i['Total Recovered']))})
-    final={'a':a,'d':d,'c':c,'r':r}
+    final={'Active':a,'Deceased':d,'Confirmed':c,'Recovered':r}
     return final
 
 def get_total_data_of_states():
@@ -103,8 +103,29 @@ def get_total_data_of_states1():
             i.pop("Delta_Deaths")
             i.pop("State_Notes")
             final.append(i)
+    print(final[0])
     return final
-    # print(final)
+    
+    
+def get_state_lastmonth():
+    req = requests.get("https://api.covid19india.org/csv/latest/state_wise_daily.csv")
+    url_content = req.content
+    csv_file = open('downloaded.csv', 'wb')
+    csv_file.write(url_content)
+    csv_file.close()
+    needed=[]
+    with open('downloaded.csv', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for i in reader:
+            needed.append(i)            
+    state_code=['TT', 'AN', 'AP', 'AR', 'AS', 'BR', 'CH', 'CT', 'DN', 'DD', 'DL', 'GA', 'GJ', 'HR', 'HP', 'JK', 'JH', 'KA', 'KL', 'LA', 'LD', 'MP', 'MH', 'MN', 'ML', 'MZ', 'NL', 'OR', 'PY', 'PB', 'RJ', 'SK', 'TN', 'TG', 'TR', 'UP', 'UT', 'WB', 'UN']
+    needed=needed[len(needed)-90:]
+    states={i:{'Active':[],'Confirmed':[],'Deceased':[],'Recovered':[]} for i in state_code}
+    for i in needed:
+        for j in state_code:
+            states[j][i['Status']].append({i['Date_YMD']:i[j]})
+    return states['KA']
+
 
 
 

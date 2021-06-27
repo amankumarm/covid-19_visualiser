@@ -58,15 +58,16 @@ export const Spreads=()=>{
     axios.get(flaskgetcontryhistory)
     .then(res=>{
     	const inc_data=res.data
-	get_tick_values(res.data.a)
-    	setconfd([{id:"Confirmed",data:get_in_required_format(res.data.c)}])
-	setact([{id:"Active",data:get_in_required_format(res.data.a)}])
-	setrec([{id:"Recovered",data:get_in_required_format(res.data.r)}])
-	setdet([{id:"Deaths",data:get_in_required_format(res.data.d)}])
-	setticka(get_tick_values(res.data.a))
-	settickc(get_tick_values(res.data.c))
-	settickd(get_tick_values(res.data.d))
-	settickr(get_tick_values(res.data.r))
+        console.log(inc_data)
+	
+    	setconfd([{id:"Confirmed",data:get_in_required_format(res.data.Confirmed)}])
+	setact([{id:"Active",data:get_in_required_format(res.data.Active)}])
+	setrec([{id:"Recovered",data:get_in_required_format(res.data.Recovered)}])
+	setdet([{id:"Deaths",data:get_in_required_format(res.data.Deceased)}])
+	setticka(get_tick_values(res.data.Active))
+	settickc(get_tick_values(res.data.Confirmed))
+	settickd(get_tick_values(res.data.Deceased))
+	settickr(get_tick_values(res.data.Recovered))
 	})
 	    	
     .catch(err=>console.log(err))
@@ -96,7 +97,30 @@ export const Spreads=()=>{
         col_sc:'nivo'
     }
 
-    return (<div className="spreads test">
+   
+    if(act.length===1){
+        
+            return (<div className="spreads test">
+        
+        <div className="sp_">
+        <MyResponsiveLine data={confd} tv={tickc} conf={c_op}/>
+        </div>
+        <div className="sp_">
+        <MyResponsiveLine data={act} tv={ticka} conf={a_op}/>
+        </div>
+         <div className="sp_">
+        <MyResponsiveLine data={rec} tv={tickr} conf={r_op}/>
+        </div>
+        <div className="sp_">
+        <MyResponsiveLine data={det}  tv={tickd} conf={d_op}/>
+        </div> 
+
+        
+    </div>)
+        
+    }
+    else{
+        return (<div className="spreads test">
 
         <div className="sp_">
         <MyResponsiveLine data={confd} tv={tickc} conf={c_op}/>
@@ -113,4 +137,6 @@ export const Spreads=()=>{
 
         
     </div>)
+    }
+
 }

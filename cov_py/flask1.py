@@ -1,7 +1,7 @@
 from flask import Flask
 import json
 from flask_cors import CORS
-from pivot import get_total_data_of_states1,get_all_states_daily_data,get_total_data
+from pivot import get_total_data_of_states1,get_all_states_daily_data,get_total_data,get_state_lastmonth
 app = Flask(__name__)
 cors = CORS(app)
 @app.route('/getstateall')
@@ -19,11 +19,11 @@ def func2():
 	f=get_total_data()
 	a=json.dumps(f,indent=4)
 	return a
-@app.route('/test')
+@app.route('/getstatesdailydata')
 def func3():  #works
-	f=get_all_states_daily_data()
+	f=get_state_lastmonth()
 	a=json.dumps(f,indent=4)
-	return a
+	return a 
 if __name__ == '__main__':
    app.run(debug=True)
    
