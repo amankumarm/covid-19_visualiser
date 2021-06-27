@@ -124,7 +124,7 @@ def get_state_lastmonth():
     for i in needed:
         for j in state_code:
             states[j][i['Status']].append({i['Date_YMD']:i[j]})
-    return states['KA']
+    return states
 
 
 
