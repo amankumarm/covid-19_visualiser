@@ -47,8 +47,17 @@ font-weight:900;
     position:sticky;
 }
 .sp_{
-    flex-basis: 23%;
+    flex-basis: 23% !important;
     margin:8px 0px;
     border-radius:12px ;
  
+}
+.st{
+    text-align: center;
+}
+.select-box{
+    padding:0.7em;
+    background-color:#161625;
+    border:1.5px solid #646b79;
+    margin:1em 0em;
 }

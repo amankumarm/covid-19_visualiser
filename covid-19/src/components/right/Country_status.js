@@ -2,7 +2,8 @@ import '../../assets/css/right.css'
 import {useEffect,useState} from 'react'
 import MyResponsiveLine from './a'
 import axios from 'axios'
-import {flaskgetcontryhistory} from '../../constants'
+import {flaskgetstatehistory} from '../../constants'
+import state_name from '../../assets/state_data.json'
 export const Country_status=()=>(
     <div className="country_status col-grey">
 	<div className="ind col-red"><h2>India</h2>
@@ -18,7 +19,7 @@ per source</div>
 
 
 
-export const Spreads=()=>{
+export const Spreads=({spread,setspread})=>{
     const [confd,setconfd]=useState([])
     const [act,setact]=useState([])
     const [rec,setrec]=useState([])   
@@ -39,6 +40,10 @@ export const Spreads=()=>{
     
     const get_tick_values=(g)=>{
     	const inc=g
+        if(inc.length==0){
+            var ticks={x:["data not provided"],y:["data not provided"]}
+            return ticks
+        }
     	var ticks={x:[],y:[]}
     	ticks.x.push(Object.keys(inc[0])[0])
     	ticks.x.push(Object.keys(inc[Math.floor(inc.length/4)])[0])
@@ -55,10 +60,11 @@ export const Spreads=()=>{
     	
     }
     useEffect(()=>{
-    axios.get(flaskgetcontryhistory)
+    axios.get(flaskgetstatehistory+spread)
     .then(res=>{
     	const inc_data=res.data
         console.log(inc_data)
+
 	
     	setconfd([{id:"Confirmed",data:get_in_required_format(res.data.Confirmed)}])
 	setact([{id:"Active",data:get_in_required_format(res.data.Active)}])
@@ -68,11 +74,12 @@ export const Spreads=()=>{
 	settickc(get_tick_values(res.data.Confirmed))
 	settickd(get_tick_values(res.data.Deceased))
 	settickr(get_tick_values(res.data.Recovered))
+    
 	})
 	    	
     .catch(err=>console.log(err))
     
-    },[])
+    },[spread])
     
     const c_op={
         theme_bg:"#331327",
@@ -96,18 +103,27 @@ export const Spreads=()=>{
         theme_fc:"#666F77",
         col_sc:'nivo'
     }
-
+    const selectHandler=(e)=>{
+        setspread(e.target.value)
+    }
+    
    
-    if(act.length===1){
         
             return (<div className="spreads test">
-        
+                <h2 className="col-grey st">Spread Trends</h2>
+        <select onChange={selectHandler} className="select-box col-grey">
+            {
+                state_name.map((item,index)=>{if(index==0){return(<option value="TT" key={Object.values(item)}>India</option>)} else{return (<option value={Object.values(item)} key={Object.values(item)}>{Object.keys(item)}</option>)}})
+            }
+        </select>
         <div className="sp_">
         <MyResponsiveLine data={confd} tv={tickc} conf={c_op}/>
         </div>
-        <div className="sp_">
-        <MyResponsiveLine data={act} tv={ticka} conf={a_op}/>
-        </div>
+        {
+            ticka.x[0]==="data not provided" ? null :(<div className="sp_">
+            <MyResponsiveLine data={act} tv={ticka} conf={a_op}/>
+            </div>)
+        }
          <div className="sp_">
         <MyResponsiveLine data={rec} tv={tickr} conf={r_op}/>
         </div>
@@ -118,25 +134,6 @@ export const Spreads=()=>{
         
     </div>)
         
-    }
-    else{
-        return (<div className="spreads test">
-
-        <div className="sp_">
-        <MyResponsiveLine data={confd} tv={tickc} conf={c_op}/>
-        </div>
-        <div className="sp_">
-        <MyResponsiveLine data={act} tv={ticka} conf={a_op}/>
-        </div>
-         <div className="sp_">
-        <MyResponsiveLine data={rec} tv={tickr} conf={r_op}/>
-        </div>
-        <div className="sp_">
-        <MyResponsiveLine data={det}  tv={tickd} conf={d_op}/>
-        </div> 
-
-        
-    </div>)
-    }
+   
 
 }
