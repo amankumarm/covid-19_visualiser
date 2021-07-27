@@ -2,6 +2,7 @@ import '../../assets/css/right.css'
 import {useEffect,useState} from 'react'
 import MyResponsiveLine from './a'
 import axios from 'axios'
+import { make_it_indian } from '../../assets/test'
 import {flaskgetstatehistory} from '../../constants'
 import state_name from '../../assets/state_data.json'
 export const Country_status=()=>(
@@ -56,7 +57,8 @@ export const Spreads=({spread,setspread})=>{
     	ticks.y.push(Object.values(inc[Math.floor(inc.length/2)])[0])
     	ticks.y.push(Object.values(inc[Math.floor(inc.length*(3/4))])[0])
     	ticks.y.push(Object.values(inc[Math.floor(inc.length-1)])[0])
-    	return ticks
+    	console.log(ticks)
+        return ticks
     	
     }
     useEffect(()=>{

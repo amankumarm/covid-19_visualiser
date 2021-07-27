@@ -47,10 +47,11 @@ font-weight:900;
     position:sticky;
 }
 .sp_{
-    flex-basis: 23% !important;
+    /* flex-basis: 23% !important; */
+    height: 200px;
     margin:8px 0px;
     border-radius:12px ;
- 
+    /* max-height: 300px; */
 }
 .st{
     text-align: center;

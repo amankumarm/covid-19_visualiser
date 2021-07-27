@@ -1,7 +1,7 @@
 import Left from "./left"
 import Right from "./right"
 import '../assets/css/home.css'
-const Home = () => (
+const Home = ({setalldata}) => (
     <div className="main_outer">
         <Left/>
         <Right/>

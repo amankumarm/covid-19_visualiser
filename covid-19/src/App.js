@@ -1,7 +1,21 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import  Home from "./components/home";
-const App=()=> (
+import {flaskgetallstatehistory} from "./constants"
+const App=()=> {
+const [alldata,setalldata]=useState({})
+useEffect(()=>{
+    // console.log(flaskgetallstatehistory)
+    axios.get(flaskgetallstatehistory)
+    .then(res=>{
+        localStorage.setItem("all_state_month",JSON.stringify(res.data))
+        setalldata(res.data)
+    })
+    .catch(err=>console.log(err))
+},[])
+return(
 <div>
-    <Home />
+    <Home setalldata={setalldata}/>
 </div>
-)
+)}
 export default App

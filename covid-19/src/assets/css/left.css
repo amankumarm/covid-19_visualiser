@@ -102,6 +102,7 @@
 }
 .all_i_card{
     flex-grow:0.8;
+    flex-basis: 25%;
     font-family: 'Archia-Regular' !important;
     font-weight: bold;
     display: flex;
@@ -119,27 +120,27 @@
 }
 .all_i_card > span{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1vw;
     font-family: 'Be Vietnam Bold';
     letter-spacing: 1px;
 }
 .cr:hover{
     background-color: var(--col-red);
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 .cb:hover{
     background-color: var(--col-blu);
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 
 }
 .cg:hover{
     background-color: var(--col-grn);
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 
 }
 .cgr:hover{
     background-color: var(--col-gre);
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 
 /* Table */

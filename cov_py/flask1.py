@@ -22,16 +22,17 @@ def func3():  #works
       a=json.dumps(f,indent=4)
       return a
    f=get_state_lastmonth()[request.args.get('state')]
+   print(get_state_lastmonth())
    a=json.dumps(f,indent=4)
    return a 
 
-# @app.route('/gg')
-# def func4():  #works
-#    f=get_state_lastmonth()
-#    # return f
-#    a=json.dumps(f,indent=4)
-#    return a 
-#    # return "hi"
+
+@app.route('/getallstate_onemonth')
+def f4():
+   f=get_state_lastmonth()
+   a=json.dumps(f,indent=4)
+   return a 
+
 if __name__ == '__main__':
    app.run(debug=True)
    
