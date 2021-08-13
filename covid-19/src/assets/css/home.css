@@ -10,5 +10,6 @@
     flex-basis:50% ;
     padding:5em 5vw;
     justify-content: space-around;
+    width: 100vw;
     /* mak this 100% */
 }

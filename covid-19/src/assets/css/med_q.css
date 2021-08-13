@@ -1,0 +1,54 @@
+@media only screen and (max-width:1300px) {
+    body{
+        /* display: none; */
+    }
+    .main_outer{
+        display: flex;
+        flex-direction: column !important;
+        background-color: #161625;
+        height:100%; 
+        flex-basis:50% ;
+        padding:5em 5vw;
+        justify-content: space-around;
+        width: 100vw;
+    }
+    .c_status{
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        overflow:scroll
+    }
+    .all_i_card{
+        /* flex-grow:0.8; */
+        /* max-width: 15vw; */
+        font-family: 'Archia-Regular' !important;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        border-radius:12px ;
+        padding:12px 1em ;
+        justify-content: space-around;
+    }
+    .all_i_card > p{
+        text-align: center;
+        font-weight: bolder;
+        font-size: small;
+        
+    }
+    .all_i_card > span{
+        text-align: center;
+        font-size: 3.5vw;
+        font-family: 'Be Vietnam Bold';
+        letter-spacing: 1px;
+    }
+    .head{
+        font-size:8px;
+        font-weight: bold;
+    }
+    .col{
+        padding: 5px;
+    }
+    .Statel_outer{
+        font-size: small;
+    }
+}   
