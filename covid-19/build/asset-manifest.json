@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.3e57e693.chunk.css",
-    "main.js": "/static/js/main.c38c874e.chunk.js",
-    "main.js.map": "/static/js/main.c38c874e.chunk.js.map",
+    "main.css": "/static/css/main.667c6ca9.chunk.css",
+    "main.js": "/static/js/main.e2b87da5.chunk.js",
+    "main.js.map": "/static/js/main.e2b87da5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1d0c9ceb.js",
     "runtime-main.js.map": "/static/js/runtime-main.1d0c9ceb.js.map",
-    "static/js/2.858de478.chunk.js": "/static/js/2.858de478.chunk.js",
-    "static/js/2.858de478.chunk.js.map": "/static/js/2.858de478.chunk.js.map",
+    "static/js/2.214a51bd.chunk.js": "/static/js/2.214a51bd.chunk.js",
+    "static/js/2.214a51bd.chunk.js.map": "/static/js/2.214a51bd.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.3e57e693.chunk.css.map": "/static/css/main.3e57e693.chunk.css.map",
-    "static/js/2.858de478.chunk.js.LICENSE.txt": "/static/js/2.858de478.chunk.js.LICENSE.txt",
+    "static/css/main.667c6ca9.chunk.css.map": "/static/css/main.667c6ca9.chunk.css.map",
+    "static/js/2.214a51bd.chunk.js.LICENSE.txt": "/static/js/2.214a51bd.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/BeVietnam-ThinItalic.3add6457.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.1d0c9ceb.js",
-    "static/js/2.858de478.chunk.js",
-    "static/css/main.3e57e693.chunk.css",
-    "static/js/main.c38c874e.chunk.js"
+    "static/js/2.214a51bd.chunk.js",
+    "static/css/main.667c6ca9.chunk.css",
+    "static/js/main.e2b87da5.chunk.js"
   ]
 }

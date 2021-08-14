@@ -4,7 +4,9 @@ import { ResponsiveLine } from '@nivo/line'
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
-const MyResponsiveLine = ({ data ,conf ,tv,name  }) => (
+const MyResponsiveLine = ({ data ,conf ,tv,name  }) => {
+
+    return(
     <ResponsiveLine
         theme={{
             "background": conf.theme_bg,
@@ -65,9 +67,9 @@ const MyResponsiveLine = ({ data ,conf ,tv,name  }) => (
         axisLeft={null}
         colors={{ scheme: conf.col_sc }}
         pointColor={{ theme: 'background' }}
-        pointSize={3.5}
+        pointSize={3}
         // colors={{ datum: '#6C757D' }}
-        pointBorderWidth={4}
+        pointBorderWidth={3}
         pointBorderColor={{ from: 'serieColor' }}
         pointLabelYOffset={-12}
         crosshairType="top-left"
@@ -99,5 +101,6 @@ const MyResponsiveLine = ({ data ,conf ,tv,name  }) => (
         ]}
     />
 )
+    }
 
 export default MyResponsiveLine
