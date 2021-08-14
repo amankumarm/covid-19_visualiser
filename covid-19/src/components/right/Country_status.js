@@ -9,10 +9,7 @@ export const Country_status=()=>(
     <div className="country_status col-grey">
 	<div className="ind col-red"><h2>India</h2>
 	<p>Today</p></div>
-	<div className="i2">Tested
-39,40,72,142
-As of 21 June
-per source</div>    	
+	<div className="i2">a Wear Mask announcement.</div>    	
     </div>
 )
 
@@ -47,15 +44,11 @@ export const Spreads=({spread,setspread})=>{
         }
     	var ticks={x:[],y:[]}
     	ticks.x.push(Object.keys(inc[0])[0])
-    	ticks.x.push(Object.keys(inc[Math.floor(inc.length/4)])[0])
     	ticks.x.push(Object.keys(inc[Math.floor(inc.length/2)])[0])
-    	ticks.x.push(Object.keys(inc[Math.floor(inc.length*(3/4))])[0])
     	ticks.x.push(Object.keys(inc[Math.floor(inc.length-1)])[0])
     	
     	ticks.y.push(Object.values(inc[0])[0])
-    	ticks.y.push(Object.values(inc[Math.floor(inc.length/4)])[0])
     	ticks.y.push(Object.values(inc[Math.floor(inc.length/2)])[0])
-    	ticks.y.push(Object.values(inc[Math.floor(inc.length*(3/4))])[0])
     	ticks.y.push(Object.values(inc[Math.floor(inc.length-1)])[0])
     	console.log(ticks)
         return ticks

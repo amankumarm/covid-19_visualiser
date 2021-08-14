@@ -9,7 +9,7 @@ const MyResponsiveLine = ({ data ,conf ,tv,name  }) => (
         theme={{
             "background": conf.theme_bg,
             "textColor": conf.theme_fc,
-            "fontSize": 13,
+            "fontSize": 10,
             "axis": {
                 "domain": {
                     "line": {
@@ -65,7 +65,7 @@ const MyResponsiveLine = ({ data ,conf ,tv,name  }) => (
         axisLeft={null}
         colors={{ scheme: conf.col_sc }}
         pointColor={{ theme: 'background' }}
-        pointSize={5}
+        pointSize={3.5}
         // colors={{ datum: '#6C757D' }}
         pointBorderWidth={4}
         pointBorderColor={{ from: 'serieColor' }}
