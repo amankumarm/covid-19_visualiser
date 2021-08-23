@@ -1,11 +1,11 @@
 import { ResponsiveLine } from '@nivo/line'
+import { useEffect } from 'react'
 // make sure parent container have a defined height when using
 // responsive component, otherwise height will be 0 and
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
 const MyResponsiveLine = ({ data ,conf ,tv,name  }) => {
-
     return(
     <ResponsiveLine
         theme={{
@@ -34,7 +34,7 @@ const MyResponsiveLine = ({ data ,conf ,tv,name  }) => {
             }
         }}
         data={data}
-        margin={{ top: 50, right: 50, bottom: 50, left: 50 }}
+        margin={{ top: 50, right: 42, bottom: 50, left: 40 }}
         xScale={{ type: 'point' }}
         yScale={{ type: 'linear', min: 0, max: 'auto', stacked: true, reverse: false }}
         yFormat=" >-.2f"

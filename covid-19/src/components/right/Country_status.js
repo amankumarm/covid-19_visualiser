@@ -3,7 +3,7 @@ import {useEffect,useState} from 'react'
 import MyResponsiveLine from './a'
 import axios from 'axios'
 import { make_it_indian } from '../../assets/test'
-import {flaskgetstatehistory} from '../../constants'
+import {flaskgetstatehistory, flaskgetstatehistory_mob} from '../../constants'
 import state_name from '../../assets/state_data.json'
 export const Country_status=()=>(
     <div className="country_status col-grey">
@@ -18,6 +18,8 @@ export const Country_status=()=>(
 
 
 export const Spreads=({spread,setspread})=>{
+
+
     const [confd,setconfd]=useState([])
     const [act,setact]=useState([])
     const [rec,setrec]=useState([])   
@@ -55,25 +57,41 @@ export const Spreads=({spread,setspread})=>{
     	
     }
     useEffect(()=>{
-    axios.get(flaskgetstatehistory+spread)
-    .then(res=>{
-    	const inc_data=res.data
-        console.log(inc_data)
-
-	
-    	setconfd([{id:"Confirmed",data:get_in_required_format(res.data.Confirmed)}])
-	setact([{id:"Active",data:get_in_required_format(res.data.Active)}])
-	setrec([{id:"Recovered",data:get_in_required_format(res.data.Recovered)}])
-	setdet([{id:"Deaths",data:get_in_required_format(res.data.Deceased)}])
-	setticka(get_tick_values(res.data.Active))
-	settickc(get_tick_values(res.data.Confirmed))
-	settickd(get_tick_values(res.data.Deceased))
-	settickr(get_tick_values(res.data.Recovered))
-    
+        if (window.innerWidth>700) {
+            console.log(window.innerWidth)
+            
+            axios.get(flaskgetstatehistory+spread)
+            .then(res=>{
+            const inc_data=res.data
+            console.log(inc_data)
+            setconfd([{id:"Confirmed",data:get_in_required_format(res.data.Confirmed)}])
+	        setact([{id:"Active",data:get_in_required_format(res.data.Active)}])
+	        setrec([{id:"Recovered",data:get_in_required_format(res.data.Recovered)}])
+	        setdet([{id:"Deaths",data:get_in_required_format(res.data.Deceased)}])
+	        setticka(get_tick_values(res.data.Active))
+	        settickc(get_tick_values(res.data.Confirmed))
+	        settickd(get_tick_values(res.data.Deceased))
+	        settickr(get_tick_values(res.data.Recovered))
 	})
-	    	
     .catch(err=>console.log(err))
-    
+}
+    else{
+        console.log(window.innerWidth)
+        axios.get(flaskgetstatehistory_mob+spread)
+        .then(res=>{
+        const inc_data=res.data
+        console.log(inc_data)
+        setconfd([{id:"Confirmed",data:get_in_required_format(res.data.Confirmed)}])
+        setact([{id:"Active",data:get_in_required_format(res.data.Active)}])
+        setrec([{id:"Recovered",data:get_in_required_format(res.data.Recovered)}])
+        setdet([{id:"Deaths",data:get_in_required_format(res.data.Deceased)}])
+        setticka(get_tick_values(res.data.Active))
+        settickc(get_tick_values(res.data.Confirmed))
+        settickd(get_tick_values(res.data.Deceased))
+        settickr(get_tick_values(res.data.Recovered))
+        })
+        .catch(err=>console.log(err))
+    }
     },[spread])
     
     const c_op={

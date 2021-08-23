@@ -1,0 +1,4 @@
+reduce the number of points
+add refresh modal if data not loaded
+rounded corenes for graphs
+add loading modal
