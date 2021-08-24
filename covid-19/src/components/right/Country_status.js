@@ -78,8 +78,8 @@ export const Spreads=({spread,setspread})=>{
         const data_success=()=>{
             toast.dark("🦄 Data fetched ", {
                 position: "top-right",
-                autoClose: 2000,
-                hideProgressBar: false,
+                autoClose: 3000,
+                hideProgressBar: true,
                 closeOnClick: true,
                 pauseOnHover: true,
                 draggable: true,
@@ -107,7 +107,19 @@ export const Spreads=({spread,setspread})=>{
             dismiss()
 
 	})
-    .catch(err=>console.log(err))
+    .catch(err=>{
+        toast.warn("🦄 Error occured. Try refreshing  ", {
+            position: "top-right",
+            autoClose: false,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            toastId:'AKM1'    
+        })
+        dismiss()
+    })
 }
     else{
         console.log(window.innerWidth)
@@ -124,8 +136,23 @@ export const Spreads=({spread,setspread})=>{
         settickc(get_tick_values(res.data.Confirmed))
         settickd(get_tick_values(res.data.Deceased))
         settickr(get_tick_values(res.data.Recovered))
+        data_success()
+        dismiss()
+    })
+        .catch(err=>{
+            toast.warn("🦄 Error occured. Try refreshing  ", {
+                position: "top-right",
+                autoClose: false,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                toastId:'AKM1'    
+            })
+            dismiss()
+
         })
-        .catch(err=>console.log(err))
 
     }
     },[spread])

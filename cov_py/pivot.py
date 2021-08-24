@@ -37,7 +37,7 @@ def get_all_states_daily_data():
     return states
     # for i in needed:
 # get_all_states_daily_data()
-def get_total_data():
+def get_total_data(formobile):
     req = requests.get("https://api.covid19india.org/csv/latest/case_time_series.csv")
     url_content = req.content
     csv_file = open('total.csv', 'wb')
@@ -48,7 +48,11 @@ def get_total_data():
         reader = csv.DictReader(csvfile)
         for i in reader:
             needed.append(i)  
-    needed=needed[len(needed)-30:]
+    if formobile==True:
+        needed=needed[len(needed)-20:]
+    else:
+        needed=needed[len(needed)-30:]
+
     	
     c=[]
     r=[]

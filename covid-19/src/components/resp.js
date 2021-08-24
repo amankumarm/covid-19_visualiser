@@ -1,5 +1,4 @@
-// install (please make sure versions match peerDependencies)
-// yarn add @nivo/core @nivo/scatterplot
+
 import { ResponsiveScatterPlot } from '@nivo/scatterplot'
 // make sure parent container have a defined height when using
 // responsive component, otherwise height will be 0 and

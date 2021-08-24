@@ -1,5 +1,0 @@
-add refresh modal if data not loaded
-add loading modal
-rounded corners for graphs
-raise error modal
-add error toasts

@@ -18,7 +18,7 @@ def g2():
 @app.route('/getstatesdailydata')
 def func3():  #works
    if(request.args.get('state')=='TT'):
-      f=get_total_data()
+      f=get_total_data(formobile=False)
       a=json.dumps(f,indent=4)
       return a
    f=get_state_lastmonth(formobile=False)[request.args.get('state')]
@@ -28,7 +28,8 @@ def func3():  #works
 @app.route('/getstatesdailydata_mob')
 def func5():  #works
    if(request.args.get('state')=='TT'):
-      f=get_total_data()
+      f=get_total_data(formobile=True)
+
       a=json.dumps(f,indent=4)
       return a
    f=get_state_lastmonth(formobile=True)[request.args.get('state')]
