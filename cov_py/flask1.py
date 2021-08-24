@@ -21,7 +21,7 @@ def func3():  #works
       f=get_total_data()
       a=json.dumps(f,indent=4)
       return a
-   f=get_state_lastmonth()[request.args.get('state')]
+   f=get_state_lastmonth(formobile=False)[request.args.get('state')]
    print(get_state_lastmonth(formobile=False))
    a=json.dumps(f,indent=4)
    return a 
@@ -37,11 +37,11 @@ def func5():  #works
    return a 
 
 
-# @app.route('/getallstate_onemonth')
-# def f4():
-#    f=get_state_lastmonth()
-#    a=json.dumps(f,indent=4)
-#    return a 
+@app.route('/getallstate_onemonth')
+def f4():
+   f=get_state_lastmonth(formobile=False)
+   a=json.dumps(f,indent=4)
+   return a 
 
 if __name__ == '__main__':
    app.run(debug=True)

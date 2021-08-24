@@ -1,10 +1,12 @@
 import '../../assets/css/right.css'
-import {useEffect,useState} from 'react'
+import {useEffect,useState,useRef} from 'react'
 import MyResponsiveLine from './a'
 import axios from 'axios'
 import { make_it_indian } from '../../assets/test'
 import {flaskgetstatehistory, flaskgetstatehistory_mob} from '../../constants'
 import state_name from '../../assets/state_data.json'
+import {ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export const Country_status=()=>(
     <div className="country_status col-grey">
 	<div className="ind col-red"><h2>India</h2>
@@ -27,7 +29,8 @@ export const Spreads=({spread,setspread})=>{
     const [tickc,settickc]=useState({x:[],y:[]})
     const [ticka,setticka]=useState({x:[],y:[]})
     const [tickr,settickr]=useState({x:[],y:[]})
-    const [tickd,settickd]=useState({x:[],y:[]})    
+    const [tickd,settickd]=useState({x:[],y:[]})  
+    const toastId = useRef(null);
     const get_in_required_format=(g)=>{
     	 var a=g
     	 var data=[]
@@ -57,9 +60,37 @@ export const Spreads=({spread,setspread})=>{
     	
     }
     useEffect(()=>{
+        const notify = () => {
+            toastId.current = toast.dark("🦄 Pulling data from the server.", {
+                position: "top-right",
+                autoClose: false,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                toastId:'AKM'    
+            })
+          }
+        const dismiss = () => {
+            toast.dismiss(toastId.current);
+        }
+        const data_success=()=>{
+            toast.dark("🦄 Data fetched ", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                toastId:'AKM1'    
+            })
+        }
         if (window.innerWidth>700) {
             console.log(window.innerWidth)
-            
+            //add loadin modal here
+            notify()
             axios.get(flaskgetstatehistory+spread)
             .then(res=>{
             const inc_data=res.data
@@ -72,11 +103,15 @@ export const Spreads=({spread,setspread})=>{
 	        settickc(get_tick_values(res.data.Confirmed))
 	        settickd(get_tick_values(res.data.Deceased))
 	        settickr(get_tick_values(res.data.Recovered))
+            data_success()
+            dismiss()
+
 	})
     .catch(err=>console.log(err))
 }
     else{
         console.log(window.innerWidth)
+        notify()
         axios.get(flaskgetstatehistory_mob+spread)
         .then(res=>{
         const inc_data=res.data
@@ -91,6 +126,7 @@ export const Spreads=({spread,setspread})=>{
         settickr(get_tick_values(res.data.Recovered))
         })
         .catch(err=>console.log(err))
+
     }
     },[spread])
     
@@ -143,7 +179,7 @@ export const Spreads=({spread,setspread})=>{
         <div className="sp_">
         <MyResponsiveLine data={det}  tv={tickd} conf={d_op}/>
         </div> 
-
+        <ToastContainer />
         
     </div>)
         

@@ -48,7 +48,7 @@ def get_total_data():
         reader = csv.DictReader(csvfile)
         for i in reader:
             needed.append(i)  
-    needed=needed[len(needed)-10:]
+    needed=needed[len(needed)-30:]
     	
     c=[]
     r=[]
@@ -119,13 +119,10 @@ def get_state_lastmonth(formobile):
         for i in reader:
             needed.append(i)            
     state_code=['TT', 'AN', 'AP', 'AR', 'AS', 'BR', 'CH', 'CT', 'DN', 'DD', 'DL', 'GA', 'GJ', 'HR', 'HP', 'JK', 'JH', 'KA', 'KL', 'LA', 'LD', 'MP', 'MH', 'MN', 'ML', 'MZ', 'NL', 'OR', 'PY', 'PB', 'RJ', 'SK', 'TN', 'TG', 'TR', 'UP', 'UT', 'WB', 'UN']
-    if formobile:
-        needed=needed[len(needed)-30:]
-        print("here1")
-    else:
+    if formobile==True:
         needed=needed[len(needed)-60:]
-        print("here2")
-
+    else:
+        needed=needed[len(needed)-120:]
     states={i:{'Active':[],'Confirmed':[],'Deceased':[],'Recovered':[]} for i in state_code}
     for i in needed:
         for j in state_code:
