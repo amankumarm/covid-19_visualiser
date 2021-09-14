@@ -31,9 +31,9 @@ const Statetable=({setalldata})=>{
            <div className="row ">
                <div className="col-3 head col-grey ">State / UT</div>
                <div className="col head col-grey">Confirmed</div>
-               <div className="col head col-grey">Active</div>
                <div className="col head col-grey">Recoverd</div>
                <div className="col head col-grey">Desceased</div>
+               <div className="col head col-grey">Active</div>
                <div className="col-2 head col-grey">Last Updated</div>
            </div>
 
