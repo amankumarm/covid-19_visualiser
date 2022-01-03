@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import  Home from "./components/home";
 import {flaskgetallstatehistory} from "./constants"
 import "../src/assets/css/med_q.css"
+import "./App.css"
 const App=()=> {
 const [alldata,setalldata]=useState({})
 useEffect(()=>{

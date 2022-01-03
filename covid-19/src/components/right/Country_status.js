@@ -186,7 +186,7 @@ export const Spreads=({spread,setspread})=>{
    
         
             return (<div className="spreads test">
-                <h2 className="col-grey st">Spread Trends</h2>
+                <h2 className="col-grey st">Spread Trends*</h2>
         <select onChange={selectHandler} className="select-box col-grey">
             {
                 state_name.map((item,index)=>{if(index==0){return(<option value="TT" key={Object.values(item)}>India</option>)} else{return (<option value={Object.values(item)} key={Object.values(item)}>{Object.keys(item)}</option>)}})
@@ -207,7 +207,7 @@ export const Spreads=({spread,setspread})=>{
         <MyResponsiveLine data={det}  tv={tickd} conf={d_op}/>
         </div> 
         <ToastContainer />
-        
+        <p className='note'> Note: This Project receives from data from the endpoints provided by <a href='https://www.covid19india.org'>https://www.covid19india.org/</a>,  which stopped updating the endpoints with the data from on 31st October, 2021. :)</p>
     </div>)
         
    
